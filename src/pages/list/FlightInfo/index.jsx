@@ -1,7 +1,7 @@
 import style from './FlightInfo.module.scss';
 
 const FlightInfo = ({ queryData }) => {
-  return (
+  return queryData ? (
     <div className={style.flightInfo}>
       <div>Uçuş</div>
       <div>
@@ -10,7 +10,7 @@ const FlightInfo = ({ queryData }) => {
         {queryData.passengerInfos.count} Yolcu
       </div>
     </div>
-  );
+  ) : null;
 };
 
 export { FlightInfo };

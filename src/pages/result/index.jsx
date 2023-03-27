@@ -9,7 +9,7 @@ const Result = () => {
 
   return (
     <PageLayout headerType="dark">
-      {selectedCabinInfos.status === FLIGHT_STATUS.AVAILABLE ? (
+      {selectedCabinInfos?.status === FLIGHT_STATUS.AVAILABLE ? (
         <Success price={selectedCabinInfos.price} />
       ) : (
         <Error />
