@@ -1,0 +1,60 @@
+@use '../../../styles/mixins/buttons';
+
+.searchbar {
+  display: flex;
+  gap: 8px;
+  background-color: rgb(96 105 119 / 60%);
+  margin-top: 40px;
+  padding: 24px;
+  width: 70%;
+  margin: 40px auto;
+
+  input {
+    background-color: #fff;
+    text-transform: capitalize;
+  }
+}
+
+.searchBtn {
+  background-color: #e81932;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 0 12px;
+
+  @include buttons.btn-opacity;
+}
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292a2d;
+
+  input {
+    height: 56px;
+  }
+}
+
+.passenger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #292a2d;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+
+  @include buttons.btn-opacity;
+
+  svg {
+    fill: #fff;
+  }
+
+  &::after {
+    content: attr(data-passenger-count);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+  }
+}

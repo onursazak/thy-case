@@ -1,0 +1,30 @@
+@use '../../../styles/mixins/buttons';
+
+.sortBy {
+  display: flex;
+  background-color: #162130;
+  color: #fff;
+  padding: 12px;
+  justify-content: flex-end;
+  gap: 8px;
+
+  > * {
+    background-color: transparent;
+    color: #fff;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  button {
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+
+    @include buttons.btn-opacity;
+
+    &.selected {
+      background-color: #f4e6e699;
+    }
+  }
+}

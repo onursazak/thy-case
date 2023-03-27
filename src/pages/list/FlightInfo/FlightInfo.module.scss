@@ -1,0 +1,17 @@
+@use '../../../styles/mixins/buttons';
+
+.flightInfo {
+  margin-top: 40px;
+  div {
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  > div:first-child {
+    @include buttons.red-btn;
+    display: inline-block;
+  }
+
+  > div:last-child {
+    margin-top: 12px;
+  }
+}

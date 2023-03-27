@@ -1,0 +1,14 @@
+@mixin btn-opacity {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+@mixin red-btn {
+  background-color: #e81932;
+  font-size: 14px;
+  color: #fff;
+  padding: 12px 36px;
+  font-weight: bold;
+  border: 0;
+}

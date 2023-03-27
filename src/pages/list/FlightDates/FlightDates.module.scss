@@ -1,0 +1,30 @@
+.flightDates {
+  display: flex;
+  width: 50%;
+  background-color: #fff;
+  padding: 12px;
+
+  .line {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100%;
+      background-color: black;
+      position: absolute;
+      height: 1px;
+    }
+  }
+
+  .arrival {
+    padding-left: 20px;
+  }
+
+  .flightTime {
+    margin-left: 40px;
+  }
+}

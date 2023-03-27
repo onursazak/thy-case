@@ -1,0 +1,9 @@
+.listHeader {
+  &,
+  a {
+    color: #5a5a5a;
+  }
+  &::after {
+    background-color: #5a5a5a;
+  }
+}

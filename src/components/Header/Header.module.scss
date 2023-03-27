@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  position: relative;
+  padding: 24px 24px 0px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 48px);
+    background-color: #fff;
+    height: 1px;
+  }
+
+  &.light {
+    &,
+    a {
+      color: #fff;
+    }
+
+    &::after {
+      background-color: #fff;
+    }
+  }
+  &.dark {
+    &,
+    a {
+      color: #5a5a5a;
+    }
+    &::after {
+      background-color: #5a5a5a;
+    }
+  }
+
+  a {
+    font-weight: 700;
+  }
+}

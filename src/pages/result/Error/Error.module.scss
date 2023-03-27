@@ -1,0 +1,19 @@
+@use '../styles/mixins/result.scss';
+@use '../../../styles/mixins/buttons';
+
+.error {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+
+  @include result.result-message;
+
+  .backToHomepage {
+    margin-left: auto;
+    margin-top: 30px;
+
+    a {
+      @include buttons.red-btn;
+    }
+  }
+}

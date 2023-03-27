@@ -1,0 +1,15 @@
+@use '../../styles/mixins/buttons';
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.backToHomepage {
+  margin-top: 40px;
+  @include buttons.red-btn;
+  @include buttons.btn-opacity;
+}

@@ -1,0 +1,68 @@
+@use '../../../styles/mixins/buttons';
+
+.fareSubCategories {
+  background-color: #fff;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  margin-top: 12px;
+
+  > * {
+    flex: 1 1 100%;
+  }
+
+  .subCategory {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f9f9;
+      padding: 36px 12px 50px 12px;
+
+      .subCategoryName {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .price {
+        .currency {
+        }
+        .amount {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .rights {
+    list-style: none;
+    padding: 0 12px 12px 12px;
+    min-height: 250px;
+
+    li {
+      border-bottom: 1px solid rgb(211, 208, 208);
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 14px;
+    }
+  }
+
+  .selectFlight {
+    button {
+      background-color: #e81932;
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+      border: 0;
+
+      @include buttons.btn-opacity;
+
+      &:disabled {
+        background-color: #9b9a9abd;
+        cursor: default;
+        opacity: 1;
+      }
+    }
+  }
+}

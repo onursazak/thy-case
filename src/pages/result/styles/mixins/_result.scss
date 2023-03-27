@@ -1,0 +1,16 @@
+@mixin result-message {
+  .message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 4px solid #53565536;
+    padding-bottom: 16px;
+
+    > *:last-child {
+      color: #063048;
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 20px;
+    }
+  }
+}
