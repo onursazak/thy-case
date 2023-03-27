@@ -12,7 +12,7 @@ const Result = () => {
       {selectedCabinInfos?.status === FLIGHT_STATUS.AVAILABLE ? (
         <Success price={selectedCabinInfos.price} />
       ) : (
-        <Error />
+        <Error hasCabin={selectedCabinInfos} />
       )}
     </PageLayout>
   );

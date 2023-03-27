@@ -13,7 +13,7 @@ const Error = ({ hasCabin }) => {
         <div>
           <CancelIcon color="error" fontSize="large" />
         </div>
-        <div>{msg}.</div>
+        <div>{msg}</div>
       </div>
       <div className={style.backToHomepage}>
         <Link to="/">Başa dön</Link>
